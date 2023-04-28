@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-
+import { Button } from "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -19,8 +20,15 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={onButtonClick} style={{ width: "100%", height: "80%" }}>
-        indir
+      <div className=" w-75 d-inline-block" style={{ height: "100px" }}>
+        {" "}
+      </div>
+      <button
+        className="btn btn-success"
+        onClick={onButtonClick}
+        style={{ width: "50%", height: "100px" }}
+      >
+        Garanti Belgesi İndir
       </button>
     </div>
   );
